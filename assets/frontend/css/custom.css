@@ -1,0 +1,147 @@
+/* This is custom css */
+body{
+	background: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	display: compact;
+}
+/************ Tooltip ****************/
+.tooltip > .tooltip-inner {background-color: #c50244;}
+.tooltip.top .tooltip-arrow { border-top-color: #9d0136;}
+.tooltip.left .tooltip-arrow { border-left-color: #9d0136;}
+
+/************** Navigation Menu *****************/
+.nav.navbar-nav {
+	border-right: 1px solid #e2e3e4; 
+	border-left: 1px solid #e2e3e4; 
+	margin-left: -15px;
+}
+.navbar-collapse.collapse {
+	background-color:#f5f6f7;
+}
+.collapse>ul.navbar-nav>li {
+	border-right: 1px solid #026dc7;
+	background-color: #01549a;
+}
+.collapse>ul.navbar-nav>li>a,
+.collapse>ul.navbar-nav>li>a:visited {
+	color: #e4e5e5;
+}
+.collapse>ul.navbar-nav>li>a:hover,
+.collapse>ul.navbar-nav>li>a:active {
+	color: #ffffff;
+	background-color: #c50244;
+	-webkit-transition: background-color 0.5s ;
+	-moz-transition: background-color 0.5s ;
+	-ms-transition: background-color 0.5s ;
+	-o-transition: background-color 0.5s ;
+	transition: background-color 0.5s ;
+}
+.collapse>ul.navbar-nav>li.active>a,
+.collapse>ul.navbar-nav>li.active>a:hover {
+	color: #ffffff;
+	background-color: #c50244;
+}
+/********** Search *********/
+form.navbar-form {
+	margin-right: -1.9em;
+}
+.navbar-form>.form-group>input[type='text'] {
+	width: 11.3em;
+}
+.navbar-form>.form-group>input[type='text']:focus {
+	width: 18em;
+	-webkit-transition: width 0.5s;
+	-moz-transition: width 0.5s;
+	-ms-transition: width 0.5s;
+	-o-transition: width 0.5s;
+	transition: width 0.5s;
+}
+.navbar-form>.btn-primary {
+	background-color: #01549a;
+	color: #e4e5e5;
+}
+.navbar-form>.btn-primary:hover {
+	color: #ffffff;
+	background-color: #026ac2;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+/***************** header top list******************/
+.list-inline>li {
+	border-right: 1px solid #4590d8;
+}
+.list-inline>li>a {
+	font-size:13px;
+}
+.list-inline>li:last-child {
+	border-right: none;
+}
+.list-inline>li>a:hover {
+	text-decoration: none;
+}
+/***************************** body-top *****************************/
+/************** left-menu ****************/
+.article>.panel>.panel-heading {
+	color:#ffffff;
+	background-color: #01549a;
+}
+.article>.panel>.panel-heading:hover {
+	background-color: #c40243;
+	cursor: pointer;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-ms-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+.bs-example>.panel-group>.panel-default>.panel-heading>h4.panel-title>a {
+	font-size: 15px;
+	color: #4086c3;
+}
+/************* facebook, twitter & google plus icons ********************/
+.fbico {
+	background: url('../img/icons/fb.png');
+	height: 40px;
+	width: 38px;
+	float: left;
+}
+.twtico {
+
+}
+.gpico {
+
+}
+
+
+/******************** Login & Signup Modal **********************/
+@media screen and (min-width: 768px) {
+	#loginModal > .modal-dialog {
+		width:350px;
+		margin: 0 auto;
+		margin-top:150px;
+		margin-top: center;
+	}
+	#loginModal > .modal-dialog > .modal-content {
+		border-radius: 0px;
+	}
+}
+#signupModal > .modal-dialog > .modal-content {
+	border-radius: 0px;
+}
+
+
+/************************* Product Details Modal ************************/
+@media screen and (min-width: 795px) {
+	#FproductModal > .modal-dialog {
+		width:750px;
+		margin: 0 auto;
+		/*margin-top:150px;*/
+		margin-top: auto;
+	}
+	#FproductModal > .modal-dialog > .modal-content {
+		border-radius: 0px;
+	}
+}
